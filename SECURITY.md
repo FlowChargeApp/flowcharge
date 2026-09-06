@@ -1,7 +1,7 @@
 ## Reporting a vulnerability
 
 Report a vulnerability through GitHub private vulnerability reporting:
-<https://github.com/akoukoullis/flowcharge/security/advisories/new>. Do not open a
+<https://github.com/FlowChargeApp/flowcharge/security/advisories/new>. Do not open a
 public issue for a security report. Reports are received by one solo maintainer,
 Anthony Koukoullis.
 
@@ -14,7 +14,7 @@ Anthony Koukoullis.
 
 ## What to expect
 
-Acknowledgement within 7 days. Best effort thereafter — there is no fix deadline,
+Acknowledgement within 7 days. Best effort thereafter. There is no fix deadline,
 because this project has one unpaid maintainer. A 90-day default coordinated-disclosure
 window applies, negotiable on the advisory thread. Credit in the advisory unless you
 decline. There is no bug bounty, and none is planned.
@@ -26,10 +26,10 @@ promise; a fix ships as a new release, never as a patch to an older tag.
 
 ## Scope
 
-**In scope:** the behaviour of the released binary itself — arbitrary file read or
+**In scope:** the behaviour of the released binary itself: arbitrary file read or
 write and path traversal reachable through its local HTTP API, unsafe handling of a
 project folder path you supply, and unsafe download or archive extraction in the skill
-install and update mechanism — together with the release build and publish path that
+install and update mechanism. Also in scope: the release build and publish path that
 produces and signs off the published binaries.
 
 **Out of scope:** defects in third-party tools such as GitHub itself or the agentic
