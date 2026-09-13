@@ -9,6 +9,14 @@ add the brackets.
 
 Versions follow Semantic Versioning.
 
+## 0.1.2 - 2026-09-13
+
+### Fixed
+
+- Corrected two internal test fixtures for the Manage Integrations installer that named
+  the FlowCharge Core skill suite's old release-asset name and old skill-folder layout.
+  No user-facing behavior changed.
+
 ## 0.1.1 - 2026-09-12
 
 ### Added
