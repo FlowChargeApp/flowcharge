@@ -9,6 +9,26 @@ add the brackets.
 
 Versions follow Semantic Versioning.
 
+## 0.2.0 - 2026-09-14
+
+### Added
+
+- A home-page project tile's folder path can now be edited in place, and the tile shows
+  when the project was last modified.
+- Editing a project tile now opens a dedicated, labeled form instead of editing the tile
+  in place.
+- Cursor and Windsurf now support installing the FlowCharge Core skill suite at global
+  (user-level) scope, using each tool's own native Skills format, alongside the existing
+  project-scope support.
+
+### Fixed
+
+- The home page's Delete button no longer silently does nothing. Deleting a project now
+  always works, confirmed with an in-page control instead of a native dialog that could
+  go unnoticed.
+- Corrected several install-engine defects, including a presence-check gap for
+  OpenCode's legacy skill-folder layout and a stale release-fetch host.
+
 ## 0.1.2 - 2026-09-13
 
 ### Fixed
