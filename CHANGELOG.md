@@ -9,6 +9,30 @@ add the brackets.
 
 Versions follow Semantic Versioning.
 
+## 0.2.1 - 2026-09-15
+
+### Fixed
+
+- Installing or updating the FlowCharge Core skill suite no longer strips the YAML
+  frontmatter from installed skill files. Installed files are now byte-for-byte
+  identical to the published release, and the installed version is read from those
+  files directly instead of from an internal record.
+- An install that is missing skills, or whose files disagree with each other on
+  version, is now detected and reported, with a one-click repair.
+- A Manage Integrations row now reflects the result of an install or update
+  immediately, instead of showing its state from before the click.
+- Clicking Install or Update now shows a small in-progress spinner in place of the
+  button, instead of no feedback at all.
+
+### Changed
+
+- Manage Integrations rows now show one clear status per harness (not detected, not
+  installed, installed, needs repair, or up to date) instead of overlapping, and
+  sometimes contradictory, labels.
+- Each row's Install, Update and Remove controls are icon-only with consistent
+  tooltips, and Install is now available per row instead of via a shared checkbox
+  and a separate button.
+
 ## 0.2.0 - 2026-09-14
 
 ### Added
