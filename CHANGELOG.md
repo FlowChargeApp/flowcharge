@@ -34,6 +34,11 @@ Versions follow Semantic Versioning.
 - A task or issue item's attached data block is now recognized whether it is fenced
   with the standard three backticks or with a longer or tilde fence, matching normal
   Markdown behavior instead of only the exact three-backtick form.
+- The web app, CLI binary and Electron build now compute the location of FlowCharge's
+  own data files (such as the skill-install registry) the same way. One of the three
+  had drifted onto its own logic that ignored the shared data-directory setting, which
+  would have broken inside a packaged Electron build. The Electron build itself is not
+  part of this release; this keeps it correct for when it returns.
 
 ## 0.2.1 - 2026-09-15
 
