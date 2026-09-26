@@ -9,6 +9,32 @@ add the brackets.
 
 Versions follow Semantic Versioning.
 
+## 0.3.0 - 2026-09-26
+
+### Added
+
+- Add Project can now create a project's `flowcharge/` folder automatically when one
+  doesn't already exist, so a brand-new project can be added straight from the home
+  page without first installing FlowCharge Core in a coding harness.
+- Manage Integrations can now install FlowCharge Core into OpenAI Codex, alongside
+  Claude Code, OpenCode, Cursor and Windsurf.
+- The board's filter panel now has a searchable "More tags…" list holding every tag
+  on the project, so a tag past the fast-path row's cap is still reachable. The
+  fast-path row now also labels how many tags it is showing out of the full count.
+
+### Fixed
+
+- The board's sort control no longer overflows the screen at mobile widths, where it
+  previously pushed the page wider than the viewport and left the sort-direction
+  button unreachable.
+- The sort and filter buttons now expose their active state to screen readers.
+- The filter panel's tag list no longer stays empty on a small project: the rule
+  that decided which tags qualify for a chip could never be satisfied below seven
+  workstreams.
+- A task or issue item's attached data block is now recognized whether it is fenced
+  with the standard three backticks or with a longer or tilde fence, matching normal
+  Markdown behavior instead of only the exact three-backtick form.
+
 ## 0.2.1 - 2026-09-15
 
 ### Fixed
