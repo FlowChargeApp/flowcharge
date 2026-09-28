@@ -9,6 +9,14 @@ add the brackets.
 
 Versions follow Semantic Versioning.
 
+## 0.3.1 - 2026-09-28
+
+### Fixed
+
+- The macOS binaries now carry a valid code signature. The 0.3.0 macOS builds failed
+  macOS's own signature check. On a fresh Homebrew install, the first run could exit to
+  the prompt with no message and no server, and only a second run started FlowCharge.
+
 ## 0.3.0 - 2026-09-26
 
 ### Added
