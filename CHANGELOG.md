@@ -9,6 +9,29 @@ add the brackets.
 
 Versions follow Semantic Versioning.
 
+## 0.3.2 - 2026-10-15
+
+### Changed
+
+- Manage Integrations is now disabled, with a tooltip that says why, when the board is
+  opened over the network instead of on the machine running FlowCharge. The server
+  already refused every integrations action from another machine, so the button no longer
+  leads to a dead end.
+- On narrow phone screens the Manage Integrations button is now a briefcase icon, so all
+  four toolbar buttons fit.
+
+### Fixed
+
+- An open workstream detail modal now refreshes its plan, task list and issue list in
+  place when the underlying files change, with no need to close and reopen it.
+- The board search box now also finds a workstream by the ID of its plan, task list,
+  issue list or any of its issues.
+- The toolbar no longer overflows on screens 360 pixels wide or narrower.
+
+### Internal
+
+- Internal test and CI maintenance.
+
 ## 0.3.1 - 2026-09-28
 
 ### Fixed
