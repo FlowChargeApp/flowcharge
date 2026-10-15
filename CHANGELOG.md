@@ -9,6 +9,48 @@ add the brackets.
 
 Versions follow Semantic Versioning.
 
+## 0.4.0 - 2026-10-15
+
+### Added
+
+- Manage Integrations is now split by scope. The home page opens a global dialog,
+  and each project's board has its own briefcase button that installs FlowCharge Core
+  for that project only. Both dialogs are titled "Manage FlowCharge Core" and carry a
+  badge that names the scope, "Global" or "Project: <name>".
+- A board shows a red warning when FlowCharge Core is installed neither in the
+  project nor globally.
+- The board has a "Core settings" row that shows the project's default agent, task
+  list mode, prompts and validate settings, and marks each as set or default.
+- FlowCharge now checks GitHub for a newer release. When one exists, a small warning
+  icon appears in the breadcrumb row, and pressing it shows the new version. The
+  banner has a button that turns update checks off.
+- Project tiles on the home page can be dragged into a new order by their grip, and
+  the order is saved in the project list.
+- The board remembers its sort choice between sessions.
+
+### Changed
+
+- A path with no `flowcharge/` folder now opens a dialog that asks to create the
+  folder, in place of a message under the Add Project field.
+- FlowCharge now requires Node 22 or newer when it is built from source. The release
+  binaries are unaffected.
+
+### Fixed
+
+- The Manage Integrations button is now disabled, with a tooltip that says why, when
+  the board is opened over the network instead of on the machine running FlowCharge.
+- On narrow phone screens the Manage Integrations button is now an icon, so all four
+  toolbar buttons fit, and the toolbar no longer overflows.
+- An open workstream detail modal now refreshes its plan, task list and issue list in
+  place when the underlying files change.
+- The board search box now also finds a workstream by the ID of its plan, task list,
+  issue list or any of its issues.
+- The board no longer shows extra space under its information strip.
+
+### Internal
+
+- Internal test, CI and documentation maintenance.
+
 ## 0.3.2 - 2026-10-15
 
 ### Changed
