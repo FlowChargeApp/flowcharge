@@ -11,7 +11,7 @@
 writing every plan, issue and task into your repository to keep the project on
 track.**
 
-![Version 0.3.1](https://img.shields.io/badge/version-0.3.1-blue) ![License: free to use, source not published](https://img.shields.io/badge/license-free%20to%20use%2C%20source%20not%20published-lightgrey) ![Platform: macOS | Linux](https://img.shields.io/badge/platform-macOS%20%7C%20Linux-informational)
+![Version 0.3.1](https://img.shields.io/badge/version-0.3.2-blue) ![License: free to use, source not published](https://img.shields.io/badge/license-free%20to%20use%2C%20source%20not%20published-lightgrey) ![Platform: macOS | Linux](https://img.shields.io/badge/platform-macOS%20%7C%20Linux-informational)
 
 ![The FlowCharge board, with one card per workstream across five columns](flowcharge-theme-toggle.gif)
 
