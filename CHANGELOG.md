@@ -9,6 +9,54 @@ add the brackets.
 
 Versions follow Semantic Versioning.
 
+## 0.5.0 - 2026-10-28
+
+### Added
+
+- The board has a Now running panel. It lists each FlowCharge Core run working in the
+  project, with its task, its IDs, its place in the task list and a timer. Several runs
+  list together, a stalled run shows in grey, and the collapsed bar moves through the
+  runs. A Now running pill in the project row opens the panel as a pop-down, and its pin
+  key fixes the panel above the find toolbar. A run opens its detail on the Tasks tab.
+- A Health button in the project row opens the workstream, open issue and task
+  completion figures. Its pin key fixes them as a band under the project row.
+- The board shows the git branch on a row of its own, with a branch glyph.
+- Add project has a Choose folder button on macOS that opens the system folder picker.
+- Any column collapses to a narrow rail, and the choice is remembered. On a phone, a
+  status strip switches between the columns.
+
+### Changed
+
+- The top of the board is rebuilt. A brand bar, a project row with the breadcrumb, live
+  state and the Now running, Health, Core, update and More controls, a branch row and
+  the find toolbar replace the old stack of bands. The first card now starts about 220 px
+  from the top at 1280 by 800, where it started about 400 px down before.
+- Core settings and the missing-install warning moved into a FlowCharge Core popover.
+  Theme and version moved into the More menu. The update notice is a pill with a popover.
+- The board fits the window. Columns share the width, each column scrolls, and the board
+  keeps its scroll position and focus when its data refreshes.
+- Sort is one menu at every width, and the result count shows only while filtering.
+- Cards show one updated date and their first three tags.
+- Every popover and sheet now has a clear edge. Backdrops darken the page in both
+  themes. Every tappable control on a phone is at least 36 px square.
+- The home page opens the Add project form from a button, and each project tile has one
+  menu. "Delete" now reads "Remove from list", and long paths shorten.
+
+### Fixed
+
+- Pop-downs no longer run off the screen at tablet widths. The Now running pop-down opens
+  centred under the project row.
+- Walking a project folder no longer fails when a file disappears during the scan.
+- The word and value pairs on the Core control, the column heads and the Now running
+  pill now sit on one line.
+- The task completion line reads "1 task list" for a single list.
+- Search, filter, sort and view controls are labelled for assistive technology, and the
+  theme toggle reports its pressed state.
+
+### Internal
+
+- Internal test, CI and documentation maintenance.
+
 ## 0.4.0 - 2026-10-15
 
 ### Added
